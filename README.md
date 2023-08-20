@@ -2,12 +2,12 @@
 
 ## Complete Checklist for Node.js Project:
 
-### **Project Initialization and Structure**: [project_init.sh](scripts/project_init.sh)
+### **Project Initialization and Structure**: [project_init.sh](scripts/1_project_init.sh)
 
 - [ ] Run `npm init` to initialize a new project.
 - [ ] Establish a consistent directory structure (`src`, `tests`, `config`, `public`, `utils`).
 
-### **Version Control**:
+### **Version Control**: [git_init.sh](scripts/2_git_init.sh)
 
 - [ ] Initialize a Git repository (`git init`).
 - [ ] Create and configure `.gitignore` (exclude `node_modules/`, `.env`, `dist/`, etc.).
