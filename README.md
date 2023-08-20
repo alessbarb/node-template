@@ -2,105 +2,121 @@
 
 ## Complete Checklist for Node.js Project:
 
-### **Project Initialization and Structure**: [project_init.sh](scripts/1_project_init.sh)
+### 1. Project Initialization and Structure: 
+  Script: [1_project_init.sh](scripts/1_project_init.sh)
+  
+  - [ ] Run `npm init` to initialize a new project.
+  - [ ] Establish a consistent directory structure (`src`, `tests`, `config`, `public`, `utils`).
 
-- [ ] Run `npm init` to initialize a new project.
-- [ ] Establish a consistent directory structure (`src`, `tests`, `config`, `public`, `utils`).
+### 2. Version Control: 
+  Script: [2_git_init.sh](scripts/2_git_init.sh)
+  
+  - [ ] Initialize a Git repository (`git init`).
+  - [ ] Create and configure `.gitignore` (exclude `node_modules/`, `.env`, `dist/`, etc.).
 
-### **Version Control**: [git_init.sh](scripts/2_git_init.sh)
+### 3. Documentation: 
+  Script: [3_create_project_docs.sh](scripts/3_create_project_docs.sh)
+  
+  - [ ] Create a `README.md` file with:
+    - Project description.
+    - Installation and usage instructions.
+    - Contribution guidelines if it's an open-source project.
+  - [ ] Add a `LICENSE` file if necessary.
+  - [ ] Include comments in the code as needed.
 
-- [ ] Initialize a Git repository (`git init`).
-- [ ] Create and configure `.gitignore` (exclude `node_modules/`, `.env`, `dist/`, etc.).
+### 4. Environment Configuration:
+  Script: 
+  
+  - [ ] Install `dotenv` (`npm install dotenv`).
+  - [ ] Create a `.env` file for local environment variables.
+  - [ ] Create a `.env.example` file to serve as a template.
 
-### **Documentation**: [3_create_project_docs.sh](scripts/3_create_project_docs.sh)
+### 5. Development and Formatting Tools:
+  Script: 
+  
+  - [ ] Install and configure `eslint` and `prettier`.
+  - [ ] Define linting rules in `.eslintrc` and code styles in `.prettierrc`.
+  - [ ] Add scripts in `package.json` for linting and formatting.
 
-- [ ] Create a `README.md` file with:
-  - Project description.
-  - Installation and usage instructions.
-  - Contribution guidelines if it's an open-source project.
-- [ ] Add a `LICENSE` file if necessary.
-- [ ] Include comments in the code as needed.
+### 6. Testing:
+  Script: 
+  
+  - [ ] Install and configure a testing framework like `jest`.
+  - [ ] Set up tools for code coverage testing (e.g., `istanbul`).
+  - [ ] Add a script in `package.json` to run tests.
 
-### **Environment Configuration**:
+### 7. Live Development (Hot Reloading):
+  Script: 
+  
+  - [ ] Install and configure `nodemon`.
+  - [ ] Add a script in `package.json` for development mode execution.
 
-- [ ] Install `dotenv` (`npm install dotenv`).
-- [ ] Create a `.env` file for local environment variables.
-- [ ] Create a `.env.example` file to serve as a template.
+### 8. Security:
+  Script: 
+  
+  - [ ] Install `helmet` for basic security configurations.
+  - [ ] Configure `CORS` if necessary.
+  - [ ] (Optional) Set up authentication and authorization (e.g., using `passport.js`).
 
-### **Development and Formatting Tools**:
+### 9. Error Handling:
+  Script: 
+  
+  - [ ] Set up global error handling middleware in your framework (e.g., Express).
 
-- [ ] Install and configure `eslint` and `prettier`.
-- [ ] Define linting rules in `.eslintrc` and code styles in `.prettierrc`.
-- [ ] Add scripts in `package.json` for linting and formatting.
+### 10. Useful Scripts in `package.json`:
+  Script: 
+  
+  - [ ] `start`: Run the application.
+  - [ ] `dev`: Development mode execution (using `nodemon`).
+  - [ ] `test`: Run tests.
+  - [ ] `lint`: Run `eslint`.
+  - [ ] `format`: Run `prettier`.
+  - [ ] `commit`: Script for making commits using `commitizen`.
 
-### **Testing**:
+### 11. Continuous Integration and Deployment (CI/CD):
+  Script: 
+  
+  - [ ] Configure a CI file (e.g., `.github/workflows/nodejs.yml` for GitHub Actions).
+  - [ ] Set up automatic deployment to your preferred platform (Heroku, Vercel, DigitalOcean, etc.).
 
-- [ ] Install and configure a testing framework like `jest`.
-- [ ] Set up tools for code coverage testing (e.g., `istanbul`).
-- [ ] Add a script in `package.json` to run tests.
+### 12. Database:
+  Script: 
+  
+  - [ ] Decide on a database solution.
+  - [ ] Configure and connect to the database.
+  - [ ] Set up an ORM or database driver (e.g., `mongoose` for MongoDB, `sequelize` for SQL).
+  - [ ] Configure migrations and seeds if necessary.
 
-### **Live Development (Hot Reloading)**:
+### 13. Basic Dependencies:
+  Script: 
+  
+  - [ ] Install a web framework (e.g., `express`).
+  - [ ] Install common utilities (e.g., `lodash`).
+  - [ ] Configure common middleware (JSON parsing, logging, etc.).
 
-- [ ] Install and configure `nodemon`.
-- [ ] Add a script in `package.json` for development mode execution.
+### 14. Monitoring and Logging:
+  Script: 
+  
+  - [ ] Install logging tools (such as `winston` or `morgan`).
+  - [ ] (Optional) Configure monitoring tools (like `New Relic` or `Datadog`).
 
-### **Security**:
+### 15. Optimization and Performance:
+  Script: 
+  
+  - [ ] Consider tools like `compression` for compression middleware.
+  - [ ] Configure caching if necessary.
 
-- [ ] Install `helmet` for basic security configurations.
-- [ ] Configure `CORS` if necessary.
-- [ ] (Optional) Set up authentication and authorization (e.g., using `passport.js`).
+### 16. Tools for Conventional Commits:
+  Script: 
+  
+  - [ ] Install `commitizen`, `cz-conventional-changelog`.
+  - [ ] Configure `commitizen` adapter in `package.json`.
+  - [ ] Install `commitlint`, `@commitlint/{config-conventional,cli}`.
+  - [ ] Create `commitlint.config.js`.
+  - [ ] Integrate `commitlint` with `husky` to review commit messages.
+  - [ ] (Optional) Install and configure `lint-staged`.
+  - [ ] Add a script in `package.json` to make commits following Conventional Commits.
 
-### **Error Handling**:
-
-- [ ] Set up global error handling middleware in your framework (e.g., Express).
-
-### **Useful Scripts in `package.json`**:
-
-- [ ] `start`: Run the application.
-- [ ] `dev`: Development mode execution (using `nodemon`).
-- [ ] `test`: Run tests.
-- [ ] `lint`: Run `eslint`.
-- [ ] `format`: Run `prettier`.
-- [ ] `commit`: Script for making commits using `commitizen`.
-
-### **Continuous Integration and Deployment (CI/CD)**:
-
-- [ ] Configure a CI file (e.g., `.github/workflows/nodejs.yml` for GitHub Actions).
-- [ ] Set up automatic deployment to your preferred platform (Heroku, Vercel, DigitalOcean, etc.).
-
-### **Database**:
-
-- [ ] Decide on a database solution.
-- [ ] Configure and connect to the database.
-- [ ] Set up an ORM or database driver (e.g., `mongoose` for MongoDB, `sequelize` for SQL).
-- [ ] Configure migrations and seeds if necessary.
-
-### **Basic Dependencies**:
-
-- [ ] Install a web framework (e.g., `express`).
-- [ ] Install common utilities (e.g., `lodash`).
-- [ ] Configure common middleware (JSON parsing, logging, etc.).
-
-### **Monitoring and Logging**:
-
-- [ ] Install logging tools (such as `winston` or `morgan`).
-- [ ] (Optional) Configure monitoring tools (like `New Relic` or `Datadog`).
-
-### **Optimization and Performance**:
-
-- [ ] Consider tools like `compression` for compression middleware.
-- [ ] Configure caching if necessary.
-
-### **Tools for Conventional Commits**:
-
-- [ ] Install `commitizen`, `cz-conventional-changelog`.
-- [ ] Configure `commitizen` adapter in `package.json`.
-- [ ] Install `commitlint`, `@commitlint/{config-conventional,cli}`.
-- [ ] Create `commitlint.config.js`.
-- [ ] Integrate `commitlint` with `husky` to review commit messages.
-- [ ] (Optional) Install and configure `lint-staged`.
-- [ ] Add a script in `package.json` to make commits following Conventional Commits.
-
-### **Adjust as per your project's specific needs**.
+## Adjust as per your project's specific needs.
 
 I hope this checklist helps you ensure that you establish all the necessary foundations when starting a Node.js project.
