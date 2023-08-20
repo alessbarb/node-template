@@ -25,7 +25,7 @@
   - [ ] Include comments in the code as needed.
 
 ### 4. Environment Configuration:
-  Script: 
+  Script: [4_env_vars.sh](scripts/4_env_vars.sh)
   
   - [ ] Install `dotenv` (`npm install dotenv`).
   - [ ] Create a `.env` file for local environment variables.
