@@ -32,39 +32,39 @@
   - [ ] Create a `.env.example` file to serve as a template.
 
 ### 5. Development and Formatting Tools:
-  Script: 
+  Script: [5_lint_prettier.sh](scripts/5_lint_prettier.sh)
   
   - [ ] Install and configure `eslint` and `prettier`.
   - [ ] Define linting rules in `.eslintrc` and code styles in `.prettierrc`.
   - [ ] Add scripts in `package.json` for linting and formatting.
 
 ### 6. Testing:
-  Script: 
+  Script: [6_test_cov.sh](scripts/6_test_cov.sh)
   
   - [ ] Install and configure a testing framework like `jest`.
   - [ ] Set up tools for code coverage testing (e.g., `istanbul`).
   - [ ] Add a script in `package.json` to run tests.
 
 ### 7. Live Development (Hot Reloading):
-  Script: 
+  Script: [7_nodemon.sh](scripts/7_nodemon.sh)
   
   - [ ] Install and configure `nodemon`.
   - [ ] Add a script in `package.json` for development mode execution.
 
 ### 8. Security:
-  Script: 
+  Script: [8_security.sh](scripts/8_security.sh)
   
   - [ ] Install `helmet` for basic security configurations.
   - [ ] Configure `CORS` if necessary.
   - [ ] (Optional) Set up authentication and authorization (e.g., using `passport.js`).
 
 ### 9. Error Handling:
-  Script: 
+  Script: [](scripts/)
   
   - [ ] Set up global error handling middleware in your framework (e.g., Express).
 
 ### 10. Useful Scripts in `package.json`:
-  Script: 
+  Script: [](scripts/)
   
   - [ ] `start`: Run the application.
   - [ ] `dev`: Development mode execution (using `nodemon`).
@@ -74,13 +74,13 @@
   - [ ] `commit`: Script for making commits using `commitizen`.
 
 ### 11. Continuous Integration and Deployment (CI/CD):
-  Script: 
+  Script: [](scripts/)
   
   - [ ] Configure a CI file (e.g., `.github/workflows/nodejs.yml` for GitHub Actions).
   - [ ] Set up automatic deployment to your preferred platform (Heroku, Vercel, DigitalOcean, etc.).
 
 ### 12. Database:
-  Script: 
+  Script: [](scripts/)
   
   - [ ] Decide on a database solution.
   - [ ] Configure and connect to the database.
@@ -88,26 +88,26 @@
   - [ ] Configure migrations and seeds if necessary.
 
 ### 13. Basic Dependencies:
-  Script: 
+  Script: [](scripts/)
   
   - [ ] Install a web framework (e.g., `express`).
   - [ ] Install common utilities (e.g., `lodash`).
   - [ ] Configure common middleware (JSON parsing, logging, etc.).
 
 ### 14. Monitoring and Logging:
-  Script: 
+  Script: [](scripts/)
   
   - [ ] Install logging tools (such as `winston` or `morgan`).
   - [ ] (Optional) Configure monitoring tools (like `New Relic` or `Datadog`).
 
 ### 15. Optimization and Performance:
-  Script: 
+  Script: [](scripts/)
   
   - [ ] Consider tools like `compression` for compression middleware.
   - [ ] Configure caching if necessary.
 
 ### 16. Tools for Conventional Commits:
-  Script: 
+  Script: [](scripts/)
   
   - [ ] Install `commitizen`, `cz-conventional-changelog`.
   - [ ] Configure `commitizen` adapter in `package.json`.
