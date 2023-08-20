@@ -12,7 +12,7 @@
 - [ ] Initialize a Git repository (`git init`).
 - [ ] Create and configure `.gitignore` (exclude `node_modules/`, `.env`, `dist/`, etc.).
 
-### **Documentation**:
+### **Documentation**: [3_create_project_docs.sh](scripts/3_create_project_docs.sh)
 
 - [ ] Create a `README.md` file with:
   - Project description.
