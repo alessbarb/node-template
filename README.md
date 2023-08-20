@@ -2,7 +2,7 @@
 
 ## Complete Checklist for Node.js Project:
 
-### **Project Initialization and Structure**:
+### **Project Initialization and Structure**: [project_init.sh](scripts/project_init.sh)
 
 - [ ] Run `npm init` to initialize a new project.
 - [ ] Establish a consistent directory structure (`src`, `tests`, `config`, `public`, `utils`).
